@@ -2,52 +2,70 @@
 <html lang="ro">
 
 <head>
-
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <meta
         name="description"
-        content="veh4ses - Web Developer & Designer. Clean, modern websites built to perform."
+        content="VEH4SES — Web Design, Front-End și experiențe web interactive."
     >
 
-    <meta name="theme-color" content="#0a0a0a">
-
-    <title>veh4ses - Web Developer & Designer</title>
-<meta property="og:title" content="veh4ses - Web Developer & Designer">
-<meta property="og:description" content="Clean, modern websites built to perform.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://rauldanielzz.github.io/RaelPortofolio/">
-<meta property="og:image" content="https://rauldanielzz.github.io/RaelPortofolio/favicon.svg">
-
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="veh4ses - Web Developer & Designer">
-<meta name="twitter:description" content="Clean, modern websites built to perform.">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>VEH4SES — Web Developer</title>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
         rel="stylesheet"
+        href="style.css"
     >
-
-    <link rel="stylesheet" href="style.css">
-
 </head>
-
 
 <body>
 
-    <!-- HEADER -->
+    <!-- ========================================
+         CURSOR
+    ======================================== -->
 
-    <header>
+    <div class="cursor-glow"></div>
 
-        <div class="logo">
-            veh4ses
-        </div>
+
+    <!-- ========================================
+         NAVBAR
+    ======================================== -->
+
+    <header class="navbar">
+
+        <a
+            href="#home"
+            class="logo"
+        >
+            VEH4SES<span>.</span>
+        </a>
+
+        <nav>
+
+            <a
+                href="#home"
+                class="active"
+            >
+                Acasă
+            </a>
+
+            <a href="#about">
+                Despre
+            </a>
+
+            <a href="#services">
+                Ce fac
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </nav>
 
         <button
             class="menu-toggle"
@@ -55,380 +73,499 @@
             aria-label="Deschide meniul"
             aria-expanded="false"
         >
+
             <span></span>
             <span></span>
             <span></span>
+
         </button>
-
-        <nav>
-
-            <a href="#home">Home</a>
-
-            <a href="#about">About</a>
-
-            <a href="#work">Work</a>
-
-            <a href="#services">Services</a>
-
-            <a href="#process">Process</a>
-
-            <a href="#contact">Contact</a>
-
-        </nav>
 
     </header>
 
 
     <main>
 
-        <!-- HERO -->
 
-        <section id="home" class="hero">
+        <!-- ========================================
+             HERO
+        ======================================== -->
 
-            <p class="hero-intro">
-                WEB DEVELOPER & DESIGNER
-            </p>
+        <section
+            id="home"
+            class="hero"
+        >
 
-            <h1>
-                HEY, I'M veh4ses.<br>
-                I BUILD DIGITAL EXPERIENCES.
-            </h1>
+            <div class="hero-content">
 
-            <p class="hero-description">
-                Websites that are clean, modern and built to perform.
-            </p>
+                <p class="small-text">
+                    BINE AI VENIT
+                </p>
 
-            <a href="#work" class="hero-button">
-                View my work
-            </a>
+                <h1>
+                    Eu sunt
+                    <span>VEH4SES.</span>
+                </h1>
+
+                <p class="description">
+                    Construiesc experiențe web moderne,
+                    rapide și interactive.
+                </p>
+
+                <button
+                    id="exploreButton"
+                    class="hero-button"
+                    type="button"
+                >
+                    Descoperă ↓
+                </button>
+
+            </div>
 
         </section>
 
 
-        <!-- ABOUT -->
+        <!-- ========================================
+             ABOUT
+        ======================================== -->
 
-        <section id="about" class="about">
+        <section
+            id="about"
+            class="section about reveal"
+        >
 
-            <div class="about-title">
-
-                <h2>
-                    ABOUT
-                </h2>
-
-            </div>
+            <p class="small-text">
+                01 — DESPRE MINE
+            </p>
 
             <div class="about-content">
 
-                <p>
-                    I'm a web developer and designer focused on creating
-                    modern digital experiences with clean design,
-                    thoughtful structure and strong attention to detail.
-                </p>
+                <div class="about-main">
 
-                <p>
-                    I combine design and development to build websites
-                    that look refined, feel intuitive and work smoothly
-                    across desktop and mobile.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- WORK -->
-
-        <section id="work" class="work">
-
-            <div class="work-title">
-
-                <h2>
-                    SELECTED WORK
-                </h2>
-
-            </div>
-
-            <div class="projects">
-
-
-                <a href="nova.html" class="project">
-
-                    <span class="project-number">
-                        01
+                    <span class="about-label">
+                        NU AM ÎNCEPUT PENTRU CĂ ȘTIAM.
                     </span>
 
-                    <div class="project-content">
+                    <h2>
+                        Am început pentru că
+                        <span>voiam să aflu.</span>
+                    </h2>
 
-                        <span class="project-category">
-                            CREATIVE STUDIO
-                        </span>
-
-                        <h3>
-                            NOVA
-                        </h3>
-
-                        <p>
-                            Modern website for a creative studio.
-                        </p>
-
-                        <span class="project-link">
-                            View Project →
-                        </span>
-
-                    </div>
-
-                </a>
-
-
-                <a href="mono.html" class="project">
-
-                    <span class="project-number">
-                        02
-                    </span>
-
-                    <div class="project-content">
-
-                        <span class="project-category">
-                            PORTFOLIO
-                        </span>
-
-                        <h3>
-                            MONO
-                        </h3>
-
-                        <p>
-                            Minimal portfolio website for a designer.
-                        </p>
-
-                        <span class="project-link">
-                            View Project →
-                        </span>
-
-                    </div>
-
-                </a>
-
-
-                <a href="vanta.html" class="project">
-
-                    <span class="project-number">
-                        03
-                    </span>
-
-                    <div class="project-content">
-
-                        <span class="project-category">
-                            TECHNOLOGY
-                        </span>
-
-                        <h3>
-                            VANTA
-                        </h3>
-
-                        <p>
-                            Dark and modern website for a tech brand.
-                        </p>
-
-                        <span class="project-link">
-                            View Project →
-                        </span>
-
-                    </div>
-
-                </a>
-
-
-            </div>
-
-        </section>
-
-
-        <!-- SERVICES -->
-
-        <section id="services" class="services">
-
-            <div class="services-title">
-
-                <h2>
-                    SERVICES
-                </h2>
-
-            </div>
-
-
-            <div class="services-list">
-
-
-                <div class="service">
-
-                    <span class="service-number">
-                        01
-                    </span>
-
-                    <div class="service-main">
-
-                        <h4>
-                            Web Design
-                        </h4>
-
-                        <p>
-                            Clean and modern interfaces designed around
-                            your brand, content and goals.
-                        </p>
-
-                    </div>
-
-                    <span class="service-arrow">
-                        ↗
-                    </span>
+                    <p class="about-description">
+                        Fiecare proiect este o ocazie să învăț ceva nou.
+                        Nu încerc să construiesc doar site-uri care arată bine,
+                        ci experiențe care au un motiv pentru fiecare detaliu.
+                    </p>
 
                 </div>
 
 
-                <div class="service">
+                <div class="about-side">
 
-                    <span class="service-number">
-                        02
-                    </span>
+                    <div class="about-point">
 
-                    <div class="service-main">
-
-                        <h4>
-                            Web Development
-                        </h4>
-
-                        <p>
-                            Responsive websites built with clean,
-                            structured and reliable code.
-                        </p>
-
-                    </div>
-
-                    <span class="service-arrow">
-                        ↗
-                    </span>
-
-                </div>
-
-
-                <div class="service">
-
-                    <span class="service-number">
-                        03
-                    </span>
-
-                    <div class="service-main">
-
-                        <h4>
-                            UI/UX Design
-                        </h4>
-
-                        <p>
-                            Simple and intuitive experiences focused
-                            on usability and visual clarity.
-                        </p>
-
-                    </div>
-
-                    <span class="service-arrow">
-                        ↗
-                    </span>
-
-                </div>
-
-
-                <div class="service">
-
-                    <span class="service-number">
-                        04
-                    </span>
-
-                    <div class="service-main">
-
-                        <h4>
-                            Website Optimization
-                        </h4>
-
-                        <p>
-                            Improving performance, responsiveness and
-                            the overall quality of a website.
-                        </p>
-
-                    </div>
-
-                    <span class="service-arrow">
-                        ↗
-                    </span>
-
-                </div>
-
-
-            </div>
-
-        </section>
-
-
-        <!-- PROCESS -->
-
-        <section id="process" class="process">
-
-            <div class="process-title">
-
-                <h2>
-                    PROCESS
-                </h2>
-
-            </div>
-
-
-            <div class="process-list">
-
-
-                <div class="process-item">
-
-                    <div class="process-number">
-
-                        <span>
+                        <span class="about-number">
                             01
                         </span>
 
+                        <div>
+
+                            <h3>
+                                CURIOS
+                            </h3>
+
+                            <p>
+                                Nu mă opresc la „merge”.
+                                Vreau să înțeleg de ce.
+                            </p>
+
+                        </div>
+
                     </div>
 
-                    <div class="process-content">
 
-                        <h3>
-                            Discovery
-                        </h3>
+                    <div class="about-point">
 
-                        <p>
-                            Understanding the project, its goals,
-                            audience and overall direction.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="process-item">
-
-                    <div class="process-number">
-
-                        <span>
+                        <span class="about-number">
                             02
                         </span>
 
+                        <div>
+
+                            <h3>
+                                ATENT LA DETALII
+                            </h3>
+
+                            <p>
+                                Animațiile, spațierea, interacțiunile —
+                                lucrurile mici schimbă totul.
+                            </p>
+
+                        </div>
+
                     </div>
+
+
+                    <div class="about-point">
+
+                        <span class="about-number">
+                            03
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                ÎN EVOLUȚIE
+                            </h3>
+
+                            <p>
+                                Nu încerc să par că le știu pe toate.
+                                Încerc să fiu mai bun decât eram ieri.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-point">
+
+                        <span class="about-number">
+                            04
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                CONSTRUIESC
+                            </h3>
+
+                            <p>
+                                Ideile devin interesante
+                                abia când ajung să existe.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="about-bottom">
+
+                <span>
+                    CREATIVE
+                </span>
+
+                <span>
+                    CURIOUS
+                </span>
+
+                <span>
+                    DETERMINED
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             SERVICES
+        ======================================== -->
+
+        <section
+            id="services"
+            class="section services reveal"
+        >
+
+            <p class="small-text">
+                02 — CE FAC
+            </p>
+
+
+            <div class="services-showcase">
+
+
+                <!-- SERVICES TITLE -->
+
+                <div class="services-title">
+
+                    <h2>
+                        Ce fac.
+                    </h2>
+
+                    <p class="services-description">
+                        De la structură și design până la interacțiuni,
+                        construiesc experiențe web care arată bine
+                        și funcționează corect.
+                    </p>
+
+                </div>
+
+
+                <!-- SERVICES PREVIEW -->
+
+                <div
+                    class="services-preview"
+                    data-number="01"
+                >
+
+                    <div class="preview-number">
+                        01
+                    </div>
+
+                    <div class="preview-symbol">
+                        +
+                    </div>
+
+
+                    <div class="preview-content">
+
+                        <span>
+                            WEB DESIGN
+                        </span>
+
+                        <h3>
+                            Design care
+                            <br>
+                            atrage atenția.
+                        </h3>
+
+                        <p>
+                            Interfețe moderne, structuri clare
+                            și o experiență vizuală construită
+                            pentru fiecare proiect.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SERVICES NAVIGATION -->
+
+            <div class="services-navigation">
+
+                <button
+                    class="service-tab active"
+                    type="button"
+                >
+
+                    <span>
+                        01
+                    </span>
+
+                    Web Design
+
+                </button>
+
+
+                <button
+                    class="service-tab"
+                    type="button"
+                >
+
+                    <span>
+                        02
+                    </span>
+
+                    Front-End
+
+                </button>
+
+
+                <button
+                    class="service-tab"
+                    type="button"
+                >
+
+                    <span>
+                        03
+                    </span>
+
+                    Interactive
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             SKILLS
+        ======================================== -->
+
+        <section
+            id="skills"
+            class="section skills reveal"
+        >
+
+            <p class="small-text">
+                03 — SKILL-URI
+            </p>
+
+
+            <div class="skills-header">
+
+                <div></div>
+
+                <p class="skills-intro">
+                    Tehnologiile pe care le folosesc pentru
+                    a transforma ideile în experiențe web reale.
+                </p>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+
+                <!-- HTML -->
+
+                <div class="skill-card">
+
+                    <span class="skill-card-number">
+                        01
+                    </span>
+
+                    <img
+                        src="assets/icon/html.svg"
+                        alt="HTML"
+                    >
+
+                    <div class="skill-card-content">
+
+                        <h3>
+                            HTML
+                        </h3>
+
+                        <p>
+                            Structură clară, semantică și
+                            o bază solidă pentru fiecare proiect.
+                        </p>
+
+                    </div>
+
+                    <span class="skill-card-arrow">
+                        ↗
+                    </span>
+
+                </div>
+
+
+                <!-- CSS -->
+
+                <div class="skill-card">
+
+                    <span class="skill-card-number">
+                        02
+                    </span>
+
+                    <img
+                        src="assets/icon/css.svg"
+                        alt="CSS"
+                    >
+
+                    <div class="skill-card-content">
+
+                        <h3>
+                            CSS
+                        </h3>
+
+                        <p>
+                            Design, animații, responsive design
+                            și detalii vizuale care fac diferența.
+                        </p>
+
+                    </div>
+
+                    <span class="skill-card-arrow">
+                        ↗
+                    </span>
+
+                </div>
+
+
+                <!-- JAVASCRIPT -->
+
+                <div class="skill-card">
+
+                    <span class="skill-card-number">
+                        03
+                    </span>
+
+                    <img
+                        src="assets/icon/javascript.svg"
+                        alt="JavaScript"
+                    >
+
+                    <div class="skill-card-content">
+
+                        <h3>
+                            JavaScript
+                        </h3>
+
+                        <p>
+                            Interacțiuni, animații și funcționalitate
+                            care transformă un site într-o experiență.
+                        </p>
+
+                    </div>
+
+                    <span class="skill-card-arrow">
+                        ↗
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             PROCESS
+        ======================================== -->
+
+        <section
+            id="process"
+            class="section process-section reveal"
+        >
+
+            <p class="small-text">
+                04 — PROCES
+            </p>
+
+
+            <div class="process">
+
+
+                <!-- STEP 01 -->
+
+                <div class="process-step">
+
+                    <span>
+                        01
+                    </span>
+
+                    <div class="process-line"></div>
 
                     <div class="process-content">
 
                         <h3>
-                            Strategy
+                            Ideea
                         </h3>
 
                         <p>
-                            Defining the structure, priorities and
-                            direction before the design begins.
+                            Începem cu ideea, scopul proiectului
+                            și ceea ce trebuie să transmită.
                         </p>
 
                     </div>
@@ -436,15 +573,15 @@
                 </div>
 
 
-                <div class="process-item">
+                <!-- STEP 02 -->
 
-                    <div class="process-number">
+                <div class="process-step">
 
-                        <span>
-                            03
-                        </span>
+                    <span>
+                        02
+                    </span>
 
-                    </div>
+                    <div class="process-line"></div>
 
                     <div class="process-content">
 
@@ -453,8 +590,8 @@
                         </h3>
 
                         <p>
-                            Creating a clear visual system with strong
-                            typography, layout and hierarchy.
+                            Transformăm ideea într-o structură vizuală
+                            clară, modernă și potrivită proiectului.
                         </p>
 
                     </div>
@@ -462,15 +599,15 @@
                 </div>
 
 
-                <div class="process-item">
+                <!-- STEP 03 -->
 
-                    <div class="process-number">
+                <div class="process-step">
 
-                        <span>
-                            04
-                        </span>
+                    <span>
+                        03
+                    </span>
 
-                    </div>
+                    <div class="process-line"></div>
 
                     <div class="process-content">
 
@@ -479,8 +616,8 @@
                         </h3>
 
                         <p>
-                            Turning the design into a responsive,
-                            functional and polished website.
+                            Construiesc site-ul și adaug funcționalitatea,
+                            animațiile și interacțiunile necesare.
                         </p>
 
                     </div>
@@ -488,15 +625,15 @@
                 </div>
 
 
-                <div class="process-item">
+                <!-- STEP 04 -->
 
-                    <div class="process-number">
+                <div class="process-step">
 
-                        <span>
-                            05
-                        </span>
+                    <span>
+                        04
+                    </span>
 
-                    </div>
+                    <div class="process-line"></div>
 
                     <div class="process-content">
 
@@ -505,8 +642,8 @@
                         </h3>
 
                         <p>
-                            Testing the final experience and preparing
-                            the website for launch.
+                            Verificăm ultimele detalii, optimizăm
+                            experiența și proiectul este gata de lansare.
                         </p>
 
                     </div>
@@ -519,57 +656,167 @@
         </section>
 
 
-        <!-- CONTACT -->
+        <!-- ========================================
+             CONTACT
+        ======================================== -->
 
-        <section id="contact" class="contact">
+        <section
+            id="contact"
+            class="section contact reveal"
+        >
 
-            <div class="contact-title">
-
-                <h2>
-                    LET'S BUILD<br>
-                    SOMETHING.
-                </h2>
-
-            </div>
+            <p class="small-text">
+                05 — CONTACT
+            </p>
 
 
-            <div class="contact-content">
+            <div class="contact-card">
 
-                <p>
-                    Have a project in mind or want to work together?
-                    Send me a message and let's talk.
-                </p>
 
+                <!-- CONTACT INFO -->
+
+                <div class="contact-info">
+
+                    <div>
+
+                        <span class="contact-label">
+                            AI UN PROIECT?
+                        </span>
+
+                        <h2>
+                            Hai să-l
+                            <br>
+                            construim.
+                        </h2>
+
+                        <p>
+                            Ai o idee, un proiect sau un site
+                            care are nevoie de o schimbare?
+                            Spune-mi ce ai în minte.
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-decoration">
+
+                        <span class="contact-line"></span>
+
+                        <span class="contact-dot"></span>
+
+                        <span class="contact-line short"></span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CONTACT FORM -->
 
                 <form
+                    id="contactForm"
                     class="contact-form"
-                    action="https://formspree.io/f/xwlvedvr"
+                    action="https://formspree.io/f/maeqqyrr"
                     method="POST"
                 >
 
-                    <input
-                        type="text"
-                        name="name"
-                        placeholder="Your name"
-                        required
+
+                    <!-- NAME + EMAIL -->
+
+                    <div class="form-row">
+
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                Nume
+                            </label>
+
+                            <input
+                                id="name"
+                                type="text"
+                                name="name"
+                                placeholder="Numele tău"
+                                autocomplete="name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email
+                            </label>
+
+                            <input
+                                id="email"
+                                type="email"
+                                name="email"
+                                placeholder="email@exemplu.ro"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- SUBJECT -->
+
+                    <div class="form-group">
+
+                        <label for="subject">
+                            Subiect
+                        </label>
+
+                        <input
+                            id="subject"
+                            type="text"
+                            name="subject"
+                            placeholder="Despre ce este proiectul?"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- MESSAGE -->
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Mesaj
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Spune-mi câteva detalii..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- SUBMIT -->
+
+                    <button
+                        id="contactSubmit"
+                        type="submit"
                     >
-
-                    <input
-                        type="email"
-                        name="email"
-                        placeholder="Your email"
-                        required
-                    >
-
-                    <textarea
-                        name="message"
-                        placeholder="Tell me about your project"
-                        required
-                    ></textarea>
-
-                    <button type="submit">
-                        Send message
+                        Trimite mesajul
                     </button>
+
+
+                    <div
+                        id="formStatus"
+                        class="form-status"
+                        aria-live="polite"
+                    ></div>
 
                 </form>
 
@@ -580,63 +827,75 @@
     </main>
 
 
-    <!-- FOOTER -->
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
 
-    <footer>
+    <footer class="footer">
 
-        <p>
-            © 2026 veh4ses. All rights reserved.
-        </p>
+        <div class="footer-top">
 
-        <p>
-            Web Developer & Designer
-        </p>
+
+            <div class="footer-brand">
+
+                <a
+                    href="#home"
+                    class="logo"
+                >
+                    VEH4SES<span>.</span>
+                </a>
+
+                <p>
+                    Construiesc experiențe web moderne,
+                    interactive și gândite cu atenție la detalii.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">
+                    Acasă
+                </a>
+
+                <a href="#about">
+                    Despre
+                </a>
+
+                <a href="#services">
+                    Ce fac
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 VEH4SES. All rights reserved.
+            </span>
+
+            <span>
+                Built with HTML / CSS / JavaScript
+            </span>
+
+        </div>
 
     </footer>
 
 
-    <!-- MOBILE MENU -->
+    <!-- ========================================
+         JAVASCRIPT
+    ======================================== -->
 
-    <script>
-
-        const menuToggle = document.querySelector(".menu-toggle");
-
-        const nav = document.querySelector("nav");
-
-
-        menuToggle.addEventListener("click", function () {
-
-            const isOpen = nav.classList.toggle("active");
-
-            menuToggle.classList.toggle("active", isOpen);
-
-            menuToggle.setAttribute(
-                "aria-expanded",
-                isOpen
-            );
-
-        });
-
-
-        nav.querySelectorAll("a").forEach(function (link) {
-
-            link.addEventListener("click", function () {
-
-                nav.classList.remove("active");
-
-                menuToggle.classList.remove("active");
-
-                menuToggle.setAttribute(
-                    "aria-expanded",
-                    "false"
-                );
-
-            });
-
-        });
-
-    </script>
-
+    <script src="script.js"></script>
 
 </body>
 
